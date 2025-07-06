@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Harsh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .project-card, .hover-effect {
+            transition: transform 0.3s ease-in-out;
+            background-color: #b71c1c; /* Matching red tone */
+            color: white;
+        }
+        .project-card:hover, .hover-effect:hover {
+            transform: scale(1.1);
+            background-color: #8e0000; /* Darker red on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <nav class="bg-red-600 text-white p-4 flex justify-between items-center shadow-lg">
+        <h1 class="text-2xl font-extrabold tracking-widest">Portfolio</h1>
+        <ul class="flex space-x-6 text-lg">
+            <li><a href="index.html" class="hover:text-gray-300 transition duration-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition duration-300">About</a></li>
+            <li><a href="skills.html" class="hover:text-gray-300 transition duration-300">Skills</a></li>
+            <li><a href="portfolio.html" class="hover:text-gray-300 transition duration-300">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300 transition duration-300">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="max-w-6xl mx-auto my-20 p-8 bg-white dark:bg-gray-800 shadow-xl rounded-xl">
+        <h1 class="text-5xl font-extrabold text-red-600 text-center mb-10">Portfolio</h1>
+        
+        <div>
+            <h2 class="text-3xl font-semibold text-center mb-6">Latest Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-lg shadow-lg project-card">
+                    <h3 class="text-xl font-bold">24V Dual Power Supply</h3>
+                    <p class="text-sm">A regulated dual power supply circuit that provides +24V and -24V, commonly used for operational amplifiers and other electronic applications.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover-effect">
+                    <h3 class="text-xl font-bold">Library Management System using Python and MySQL</h3>
+                    <p class="text-sm">A system that helps in managing library operations efficiently, including book borrowing, returns, and inventory tracking.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover-effect">
+                    <h3 class="text-xl font-bold">FM Transmitter</h3>
+                    <p class="text-sm">A low-power radio frequency transmitter that can broadcast audio signals over FM bands for short-range communication.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover-effect">
+                    <h3 class="text-xl font-bold">Rock Paper Scissors using Python</h3>
+                    <p class="text-sm">A simple Python-based game using random module and user input to simulate the classic Rock-Paper-Scissors game.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg hover-effect">
+                    <h3 class="text-xl font-bold">Portfolio Website Using TailwindCSS and HTML</h3>
+                    <p class="text-sm">A responsive personal portfolio website designed using TailwindCSS and HTML to showcase skills, projects, and certifications.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12">
+            <h2 class="text-3xl font-semibold text-center mb-6">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-lg shadow-lg hover-effect font-bold">C++ by Udemy</div>
+                <div class="p-6 rounded-lg shadow-lg hover-effect font-bold">Python by Udemy</div>
+                <div class="p-6 rounded-lg shadow-lg hover-effect font-bold">Full Stack Development by Internshala</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

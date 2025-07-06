@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Harsh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            document.body.classList.toggle('bg-gray-100');
+            document.body.classList.toggle('bg-yellow-100');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+    <nav class="bg-red-600 text-white p-4 flex justify-between items-center shadow-lg">
+        <h1 class="text-2xl font-extrabold tracking-widest">Harsh</h1>
+        <ul class="flex space-x-6 text-lg">
+            <li><a href="index.html" class="hover:text-gray-300 transition duration-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition duration-300">About</a></li>
+            <li><a href="skills.html" class="hover:text-gray-300 transition duration-300">Skills</a></li>
+            <li><a href="portfolio.html" class="hover:text-gray-300 transition duration-300">Portfolio</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300 transition duration-300">Contact</a></li>
+        </ul>
+        <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer" onclick="toggleDarkMode()">
+            <div class="w-12 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-red-300 dark:peer-focus:ring-red-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-1 after:left-1 after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-500"></div>
+        </label>
+    </nav>
+    <section class="max-w-6xl mx-auto my-20 p-8 bg-white dark:bg-gray-800 shadow-xl rounded-xl flex items-center space-x-10">
+        <img src="harsheeeeshh.jpg" alt="Profile Picture" class="w-80 h-80 rounded-lg border-4 border-red-500 shadow-lg">
+        <div>
+            <h1 class="text-5xl font-extrabold text-red-600">About Me</h1>
+            <p class="text-2xl text-gray-700 dark:text-gray-300 mt-4 italic">"Turning problems into solutions, one step at a time."</p>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mt-6">I am Harsh, an Electronics & Telecommunication Engineer with a passion for problem-solving, soccer, and art. I have expertise in HTML, CSS, and DBMS. Always eager to learn and explore new things!</p>
+            <p class="text-lg text-gray-700 dark:text-gray-300 mt-4">With a strong analytical mindset and creativity, I enjoy tackling challenges in both technology and life. My curiosity drives me to constantly improve my skills and innovate. Whether it's coding, designing, or playing soccer, I believe in giving my best effort to everything I do.</p>
+            <a href="skills.html" class="mt-6 inline-block bg-red-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300">More Info</a>
+        </div>
+    </section>
+</body>
+</html>
